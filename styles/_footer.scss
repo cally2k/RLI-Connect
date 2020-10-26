@@ -1,0 +1,27 @@
+footer {
+    padding: 1em;
+    background-color: white;
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        
+        a {
+            text-decoration: none;
+            color: #404040;
+            padding: 0.5em;
+            font-size: calc( 1.4rem + 16 * (100vw - 280px) / (600 - 280));
+
+            i {
+                transition-duration: 0.4s;
+            }
+        }
+
+        a:hover {
+            i {
+                color: #d8aa4f;
+                transform: scale(1.4);
+            }
+        }
+    }
+}

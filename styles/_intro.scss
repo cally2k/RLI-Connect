@@ -1,0 +1,99 @@
+#intro {
+    background-color: white;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    animation: boxSlide 1.6s 3.6s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+    position: absolute;
+
+    .intro-text {
+        color: #202020;
+        height: 90vmin;
+        left: 50%;
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vmin;
+
+        animation: textFadeOut 0.6s 3s;
+        animation-fill-mode: forwards;
+
+        div {
+            height: 50%;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+
+            div {
+                font-size: 1rem;
+                padding: 2vmin 0;
+                position: absolute;
+
+                h1 {
+                    display: block;
+                }
+            }
+        }
+
+        .text-top {
+            border-bottom: 0.4vmin solid #000;
+            top: 0;
+            text-align: center;
+
+             div {
+                animation: showTopText 0.5s 0.3s forwards;
+                bottom: 0;
+                transform: translate(0, 100%);
+                height: auto;
+            }
+        }
+
+        .text-bottom {
+            text-align: center;
+            bottom: 0;
+
+             div {
+                animation: showBottomText 0.5s 1s forwards;
+                top: 0;
+                transform: translate(0, -100%);
+                height: auto;
+            }
+        }
+    }
+}
+
+.intro-hide {
+    display: none;
+}
+
+@keyframes boxSlide {
+    from {
+        transform-origin: bottom;
+    }
+    to {
+        transform-origin: bottom;
+        transform: scaleY(0);
+    }
+}
+
+@keyframes textFadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes showBottomText {
+    0% { 
+        transform: translate3d(0, -100%, 0); 
+    }
+    100% { 
+        transform: translate3d(0, 0, 0); 
+    }
+  }

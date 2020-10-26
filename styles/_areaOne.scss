@@ -1,0 +1,102 @@
+.areaOne {
+    background-image: url(/img/london.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    height: 100vh;
+
+    .areaContainer {
+        background-color: rgba(150, 150, 150, 0.30);
+
+        padding: 0 10px 10px 10px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .ImgArea {
+            width: 100vw;
+            height: 80vh;
+            position: absolute;
+        }
+
+        .CTA {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            width: 100%;
+            
+            .CTA-top {
+                color: rgb(40, 40, 40);
+                background-color: whitesmoke;
+                border-top-left-radius: 120px;
+                border-top-right-radius: 120px;
+                width: 80%;
+                margin: auto;
+
+                h3 {
+                    padding-top: 1em;
+                    text-align: center;
+                    margin-top: auto;
+                }
+                a {
+                    margin: 0 auto;
+    
+                    i {
+                        color: rgb(40, 40, 40);
+                        font-size: calc( 3rem + 16 * (100vw - 280px) / (600 - 280));
+                    }
+                }
+            }
+
+            .CTA-bottom {
+                height: 1em;
+                width: 100%;
+                background-color: whitesmoke;
+            }
+        }
+    }
+}
+
+.ImgAnim {
+    animation: fadeInAnim 0.25s, fadeOutAnim 0.4s 1.4s ease-in;
+}
+
+@keyframes fadeInAnim {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes fadeOutAnim {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.6;
+        transform: translateY(800px);
+    }
+}
+
+.chevronAnim {
+    animation: chevron 1s infinite;
+}
+
+@keyframes chevron {
+    50% {
+        transform: translateY(2vh)
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}

@@ -1,0 +1,98 @@
+.areaTwo {
+    .areaContainer {
+        // background: linear-gradient(180deg, rgba(180,180,180,0.2) 0%, rgba(180,180,180,0.3) 20%, rgba(100,100,100,0.3) 100%);
+        background-color: rgba(190, 190, 190, 0.6);
+        padding: 5em 1.5em 1.5em 1.5em;
+        text-align: center;
+
+        .RotatingText {
+            text-align: center;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            color: white;
+
+            .words-wrapper{
+                margin-bottom: 3em;
+
+                span {
+                    animation: cycleText 12s linear infinite 0s;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    font-weight: 600;
+                    left: 0;
+                    width: 100%;
+                }
+        
+                span:nth-child(2){
+                    animation-delay: 1.5s;
+                }
+                span:nth-child(3){
+                    animation-delay: 3s;
+                }
+                span:nth-child(4){
+                    animation-delay: 4.5s;
+                }
+                span:nth-child(5){
+                    animation-delay: 6s;
+                }
+                span:nth-child(6){
+                    animation-delay: 7.5s;
+                }
+                span:nth-child(7){
+                    animation-delay: 9s;
+                }
+                span:nth-child(8){
+                    animation-delay: 10.5s;
+                }
+            }   
+        }
+
+        .TextBoxL, .TextBoxR {
+            display: grid;
+            box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.2);
+            align-items: center;
+            background-color: white;
+            grid-template-rows: repeat(3, auto);
+            margin-bottom: 2em;
+            
+            h4 {
+                padding: 1em;
+            }
+
+            p {
+                padding: 0 1em;
+                padding-bottom: 1em;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes cycleText {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    8% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    17% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 0;
+    }
+}
