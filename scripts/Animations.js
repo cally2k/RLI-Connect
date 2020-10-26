@@ -1,17 +1,17 @@
 // INTRO
 // Intro Box
-// IntroI = 1;
+IntroI = 1;
 
-// window.location = "#areaOne";
+window.location = "#areaOne";
 
-// const intro = document.getElementById("intro");
-// intro.addEventListener("animationend", () => {
-//     if (IntroI === 4) {
-//         document.getElementById("intro").remove();
-//     } else {
-//         IntroI++;
-//     }
-// })
+const intro = document.getElementById("intro");
+intro.addEventListener("animationend", () => {
+    if (IntroI === 4) {
+        document.getElementById("intro").remove();
+    } else {
+        IntroI++;
+    }
+})
 
 // NAVBAR
 // Navbar Appear

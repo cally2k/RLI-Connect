@@ -55,6 +55,168 @@ body {
   display: block;
 }
 
+#intro {
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  -webkit-animation: boxSlide 1.6s 3.6s;
+          animation: boxSlide 1.6s 3.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 5;
+  position: absolute;
+}
+
+#intro .intro-text {
+  color: #202020;
+  height: 90vmin;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90vmin;
+  -webkit-animation: textFadeOut 0.6s 3s;
+          animation: textFadeOut 0.6s 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#intro .intro-text div {
+  height: 50%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+#intro .intro-text div div {
+  font-size: 1rem;
+  padding: 2vmin 0;
+  position: absolute;
+}
+
+#intro .intro-text div div h1 {
+  display: block;
+}
+
+#intro .intro-text .text-top {
+  border-bottom: 0.4vmin solid #000;
+  top: 0;
+  text-align: center;
+}
+
+#intro .intro-text .text-top div {
+  -webkit-animation: showTopText 0.5s 0.3s forwards;
+          animation: showTopText 0.5s 0.3s forwards;
+  bottom: 0;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  height: auto;
+}
+
+#intro .intro-text .text-bottom {
+  text-align: center;
+  bottom: 0;
+}
+
+#intro .intro-text .text-bottom div {
+  -webkit-animation: showBottomText 0.5s 1s forwards;
+          animation: showBottomText 0.5s 1s forwards;
+  top: 0;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  height: auto;
+}
+
+.intro-hide {
+  display: none;
+}
+
+@-webkit-keyframes boxSlide {
+  from {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  to {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@keyframes boxSlide {
+  from {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  to {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@-webkit-keyframes textFadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes textFadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes showTopText {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showTopText {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes showBottomText {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showBottomText {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 nav {
   display: -ms-grid;
   display: grid;
@@ -265,7 +427,6 @@ nav .menu-btn.open .burger::after {
 .areaOne .areaContainer .CTA .CTA-top h3 {
   padding-top: 1em;
   text-align: center;
-  margin-top: auto;
 }
 
 .areaOne .areaContainer .CTA .CTA-top a {
@@ -632,6 +793,9 @@ nav .menu-btn.open .burger::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .areaFour .areaContainer .contact-cards-container .contact-card {
