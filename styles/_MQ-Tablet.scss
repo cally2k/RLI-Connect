@@ -1,0 +1,129 @@
+@media (min-width: 600px) and (max-width: 899px) {
+    body {
+        h1{
+            font-size: calc( 2rem + 10 * (100vw - 600px) / (900 - 600) );
+            line-height: calc( 120% + 3.2 * (100vw - 900px) / (600 - 900) );
+        }
+
+        h2{
+            font-size: calc( 1.8rem + 8 * (100vw - 600px) / (900 - 600) );
+            line-height: calc( 120% + 2.8 * (100vw - 900px) / (600 - 900) );
+        }
+
+        h3 {
+            font-size: calc( 1.6rem + 6 * (100vw - 600px) / (900 - 600) );
+            line-height: calc( 120% + 2.4 * (100vw - 900px) / (600 - 900) );
+        }
+
+        h4{
+              font-size: calc( 1.4rem + 4 * (100vw - 600px) / (900 - 600) );
+              line-height: calc( 120% + 2 * (100vw - 900px) / (600 - 900) );
+        }
+
+        h5{
+            font-size: calc( 1.2rem + 2 * (100vw - 600px) / (900 - 600) );
+            line-height: calc( 120% + 1.6 * (100vw - 900px) / (600 - 900) );
+        }  
+
+        h6{
+            font-size: calc( 1rem + 2 * (100vw - 600px) / (900 - 600) );
+            line-height: calc( 120% + 1.2 * (100vw - 900px) / (600 - 900) );
+        }
+
+        p {
+              font-size: calc( 0.8rem + 2 * (100vw - 600px) / (900 - 600) );
+              line-height: calc( 120% + 1.2 * (100vw - 900px) / (600 - 900) );
+        }
+
+        span {
+            font-size: calc( 1.6rem + 6 * (100vw - 600px) / (900 - 600) );
+            line-height: calc( 120% + 2.4 * (100vw - 900px) / (600 - 900) );
+        }
+
+        a {
+            font-size: calc( 1.2rem + 2 * (100vw - 600px) / (900 - 600) );
+            line-height: calc( 120% + 1.6 * (100vw - 900px) / (600 - 900) );
+        }
+
+        nav{
+            .partners {
+                .partner + .partner {
+                    margin-left: 1em;
+                }
+                
+                .partner {
+                    p {
+                        font-size: calc( 0.8rem + 4 * (100vw - 600px) / (900 - 600) );
+                    }
+
+                    a {
+                        img {
+                            height: calc( 1.8rem + 8 * (100vw - 600px) / (900 - 600) );
+                        }
+                    }
+                }
+            }
+
+            a {
+                .logo {
+                    height: calc( 3.2rem + 14 * (100vw - 600px) / (900 - 600) );
+                }
+            }
+
+            .menu-btn {
+                .burger {
+                    width: 45px;
+                    height: 6px;
+                }
+
+                .burger::before, .burger::after {
+                    width: 45px;
+                    height: 5px;
+                }
+
+                .burger::before {
+                    transform: translate(-23px, -15px);
+                }
+                
+                .burger::after {
+                    transform: translate(-23px, 15px);
+                }
+            }
+        }
+
+        .areaFour .areaContainer .contact-cards-container .contact-card {
+            h3 {
+                font-size: calc( 1.2rem + 4 * (100vw - 600px) / (900 - 600) );
+                line-height: calc( 120% + 2.4 * (100vw - 900px) / (600 - 900) );
+            }
+
+            h4 {
+                font-size: calc( 1rem + 2 * (100vw - 600px) / (900 - 600) );
+                line-height: calc( 120% + 2.4 * (100vw - 900px) / (600 - 900) );
+            }
+
+            p {
+                font-size: calc( 0.8rem + 2 * (100vw - 600px) / (900 - 600) );
+                line-height: calc( 120% + 2.4 * (100vw - 900px) / (600 - 900) );
+            }
+
+            a {
+                font-size: calc( 0.8rem + 2 * (100vw - 600px) / (900 - 600) );
+                line-height: calc( 120% + 2.4 * (100vw - 900px) / (600 - 900) );
+            }
+        }
+
+        footer {
+            .footer-icons {
+                a {
+                    font-size: calc( 2.4rem + 4 * (100vw - 600px) / (900 - 600) );
+                }
+            }
+        }
+
+        .container-moreInfo .container-moreInfo-content .textContainer .FAQ a {
+            font-size: calc( 0.8rem + 2 * (100vw - 600px) / (900 - 600));
+            line-height: calc( 120% + 1.2 * (100vw - 900px) / (600 - 900));
+        }
+    }
+}

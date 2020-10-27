@@ -1,0 +1,189 @@
+@media (min-width: 900px) { 
+    body {
+        nav{
+            grid-template-columns: 1fr 2.5fr 1fr;
+            grid-template-areas: "logo navlist partners";
+
+            .logo {
+                grid-area: logo;
+            }
+
+            .nav-list {
+                grid-area: navlist;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+
+                li {
+                    margin: auto 0;
+                }
+            }
+
+            .partners {
+                grid-area: partners;
+            }
+
+            .menu-btn {
+                display: none;
+            }
+        }
+
+        .container-main {
+            .areaOne .areaContainer {
+                .CTA .CTA-top a i {
+                    font-size: calc( 2.4rem + 14 * (100vw - 280px) / (600 - 280));
+                }
+            }
+
+            .areaTwo .areaContainer {
+
+                .TextBoxL, .TextBoxR {
+                    grid-template-rows: repeat(2, auto);
+                    max-width: 1000px;
+    
+                    h4 {
+                        grid-area: head;
+                    }
+    
+                    p {
+                        grid-area: body;
+                    }
+    
+                    img {
+                        grid-area: img;
+                        max-height: 250px;
+                    }
+                }
+    
+                .TextBoxL {
+                    grid-template-columns: 2fr 1fr;
+                    grid-template-areas: 
+                    "head img"
+                    "body img";
+                }
+        
+                .TextBoxR {
+                    grid-template-columns: 1fr 2fr;
+                    grid-template-areas: 
+                    "img head"
+                    "img body";
+                }
+            }
+
+            .areaThree .areaContainer {
+                padding-top: 12em;
+
+                .areaThreeCardsContainer {
+                    grid-template-rows: auto;
+                    grid-template-columns: repeat(3, 1fr);
+                    margin-bottom: 10%;
+
+                    .areaThreeCard {
+                        max-width: 350px;
+                    }
+                }
+            }
+
+            .areaFour .areaContainer {
+                padding-top: 13.5em;
+
+                .contact-cards-container {
+                    grid-template-rows: auto;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-column-gap: 2em;
+
+                    .contact-card {
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+
+        .container-moreInfo .container-moreInfo-content {
+            max-width: 800px;
+        }
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    body {
+        h1{
+            font-size: calc( 2.4rem + 10 * (100vw - 900px) / (1200 - 900) );
+            line-height: calc( 120% + 3.2 * (100vw - 1200px) / (900 - 1200) );
+        }
+
+        h2{
+            font-size: calc( 2rem + 8 * (100vw - 900px) / (1200 - 900) );
+            line-height: calc( 120% + 2.8 * (100vw - 1200px) / (900 - 1200) );
+        }
+
+        h3 {
+            font-size: calc( 1.8rem + 8 * (100vw - 900px) / (1200 - 900) );
+            line-height: calc( 120% + 2.4 * (100vw - 1200px) / (900 - 1200) );
+        }
+
+        h4{
+            font-size: calc( 1.2rem + 4 * (100vw - 900px) / (1200 - 900) );
+            line-height: calc( 120% + 2 * (100vw - 1200px) / (900 - 1200) );
+        }
+
+        h5{
+            font-size: calc( 1.3rem + 4 * (100vw - 900px) / (1200 - 900) );
+            line-height: calc( 120% + 1.6 * (100vw - 1200px) / (900 - 1200) );
+        }  
+
+        h6{
+            font-size: calc( 1.2rem + 4 * (100vw - 900px) / (1200 - 900) );
+            line-height: calc( 120% + 1.2 * (100vw - 1200px) / (900 - 1200) );
+        }
+
+        p {
+            font-size: calc( 1rem + 2 * (100vw - 900px) / (1200 - 900) );
+            line-height: calc( 120% + 1.2 * (100vw - 1200px) / (900 - 1200) );
+        }
+
+        span {
+            font-size: calc( 1.8rem + 8 * (100vw - 900px) / (1200 - 900) );
+            line-height: calc( 120% + 2.4 * (100vw - 1200px) / (900 - 1200) );
+        }
+
+        a {
+            font-size: calc( 1rem + 6 * (100vw - 900px) / (1200 - 900) );
+            line-height: calc( 120% + 1.6 * (100vw - 1200px) / (900 - 1200) );
+        }
+
+        nav{
+            .nav-list {
+                a {
+                    font-size: calc( 0.8rem + 2 * (100vw - 900px) / (1200 - 900) );
+                }
+            }
+    
+            .partners {
+                .partner {
+                    p {
+                        font-size: calc( 1rem + 2 * (100vw - 900px) / (1200 - 900) );
+                    }
+                    a {
+                        img {
+                            height: calc( 2.2rem + 6 * (100vw - 900px) / (1200 - 900) );
+                        }
+                    }
+                }
+            }
+    
+            a {
+                .logo {
+                    height: calc( 4rem + 10 * (100vw - 900px) / (1200 - 900) );
+                }
+            }
+        }
+    
+        footer {
+            .footer-icons {
+                a {
+                    font-size: calc( 2.6rem + 2 * (100vw - 900px) / (1200 - 900) );
+                }
+            }
+        }
+    }
+}

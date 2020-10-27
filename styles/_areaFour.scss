@@ -2,15 +2,15 @@
 
     .areaContainer {
     // background: linear-gradient(180deg, rgba(100,100,100,0.3) 0%, rgba(255,255,255,0.2) 20%, rgba(244,244,244,0.8) 100%);
-    background-color: rgba(190, 190, 190, 0.6);
-    padding: 5em 1.5em 0 1.5em;
+    background-color: rgba(120, 120, 120, 0.6);
+    padding: 5em 5% 0 5%;
     text-align: center;
 
         .contact-cards-container {
             display: grid;
             grid-template-rows: repeat(2, 1fr);
             align-items: center;
-            justify-content: center;
+            margin: 0 auto;
 
             .contact-card {
                 box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
@@ -18,7 +18,7 @@
                 background-color: white;
                 text-align: center;
                 transition-duration: 0.5s;
-                margin-bottom: 2em;
+                margin: 0 auto 2em auto;
     
                 img {
                     width: 100%;
@@ -26,7 +26,6 @@
                 }
     
                 h3 {
-                    font-size: calc( 1.3rem + 16 * (100vw - 280px) / (960 - 280));
                     padding: 0.4em 0;
                 }
 
@@ -51,10 +50,6 @@
                         color: #d8aa4f;
                         transform: scale(1.2);
                     }
-
-                    p {
-                        font-size: calc( 0.8rem + 16 * (100vw - 280px) / (960 - 280));
-                    }
             
                     a {
                         width: 100%;
@@ -70,8 +65,9 @@
             }
         }
 
-        h6 {
+        .address {
             padding-bottom: 2em;
+            font-weight: 600;
             color: white;
         }
     }

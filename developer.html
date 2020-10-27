@@ -7,6 +7,9 @@
 
     <meta name="description" content="Developer Booking page for RLI Connect - The world's only global dealmaking event">
 
+    <!-- CSS Normalize -->
+    <link rel="stylesheet" href="styles/cssNormalize.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
 
@@ -14,10 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest"> -->
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e3c1247e73.js" crossorigin="anonymous"></script>
@@ -27,17 +30,19 @@
         <a href="index.html#areaOne">
             <img class="logo" src="img/Logo_Coloured.svg" alt="">
         </a>
-        <div class="partner">
-            <p>GOLD SPONSOR</p>
-            <a href="https://www.ece.org/" target="_blank">
-                <img src="img/ece.png" alt="">
-            </a>
-        </div>
-        <div class="partner">
-            <p>GLOBAL PARTNER</p>
-            <a href="https://www.mapic.com/en-gb.html target="_blank">
-                <img src="img/mapic.png" alt="">
-            </a>
+        <div class="partners">
+            <div class="partner">
+                <p>GOLD SPONSOR</p>
+                <a href="https://www.ece.org/" target="_blank" rel="noreferrer">
+                    <img src="img/ece.webp" alt="ECE Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <p>GLOBAL PARTNER</p>
+                <a href="https://www.mapic.com/en-gb.html target="_blank" rel="noreferrer">
+                    <img src="img/mapic.webp" alt="Mapic Logo">
+                </a>
+            </div>
         </div>
         <div class="menu-btn" id="burger">
             <div class="burger"></div>
@@ -45,73 +50,76 @@
         <ul class="nav-list hidden">
             <li><a href="index.html#areaTwo">Get Involved</a></li>
             <li><a href="index.html#areaThree">Book</a></li>
-            <li><a target="_blank" href="PDF/Brochure.pdf">Brochure</a></li>
+            <li><a target="_blank" rel="noreferrer" href="PDF/Brochure.pdf">Brochure</a></li>
             <li><a href="index.html#areaFour">Contact</a></li>
-            <li><a target="_blank" href="https://www.rli.uk.com/">Magazine</a></li>
-            <li><a target="_blank" href="https://rli.uk.com/awards/">Awards</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://www.rli.uk.com/">Magazine</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://rli.uk.com/awards/">Awards</a></li>
         </ul>
     </nav>
     <div class="container-moreInfo">
-        <div class="introContainer">
-            <h1>Developer</h1>
-            <p>The Retail & Leisure sectors have experienced huge challenges across the world as a result of the Covid-19 pandemic and will continue to face unprecedented market disruptions for the foreseeable future. In order to survive and thrive in a post Covid world, the retail industry needs to evolve and seek opportunities that have arisen. This year's event aims to connect you with the right partners to facilitate transformation and expansion strategies in a ‘New Era’.</p>
-        </div>
-        <div class="textContainer">
-            <div class="FAQ">
-                <h4 class="Question">Why Should I Take Part?</h4>
-                <p class="Answer">As we all come to terms with new shared realities, staying connected has never been more prevalent. Save time and money with all your pre-arranged meetings under one roof. As it’s a hybrid event, those who are longing to meet in person have the power of face-to-face whilst those still unable to travel can take advantage of the virtual element, enabling you to find those new-to -market retailers and unique and innovative leisure and entertainment concepts for your malls, mixed-use destinations, high-streets and outlet centres. Make new connections, form strategic partnerships and sign those deals, all from one physical or digital location…one event two experiences.</p>
+        <div class="container-moreInfo-content">
+            <div class="introContainer">
+                <h1>Developer</h1>
+                <p>The Retail & Leisure sectors have experienced huge challenges across the world as a result of the Covid-19 pandemic and will continue to face unprecedented market disruptions for the foreseeable future. In order to survive and thrive in a post Covid world, the retail industry needs to evolve and seek opportunities that have arisen. This year's event aims to connect you with the right partners to facilitate transformation and expansion strategies in a ‘New Era’.</p>
             </div>
-            <div class="FAQ">
-                <h4 class="Question">How Can I Take Part?</h4>
-                <p class="Answer">Attend the event by completing the Developer Registration Form. Once registered you will be assigned a dedicated meeting planner to organise your schedule for the event.  On arrival at the physical event you will be taken to your own private meeting room where you will meet the people you have pre-arranged meetings with. In between meetings you will have the opportunity to network with other delegates in a central location. If you are utilising the virtual element we will ensure you are connected with your pre-arranged one to one meetings at the allotted times.<br><br>The physical event allows you to either have unlimited meetings over the two days in a fully branded private meeting room, which willyou to share presentations and videos and includes your own personal dedicated meeting planner for £5,000. Alternatively if you do nothe full two days to allocate to meetings, you may arrange individual meetings at £250 per meeting, which will be arranged by your dedmeeting planner, these will take place in a central location.</p>
-            </div>
-            <div class="FAQ">
-                <h4 class="Question">How Does My Virtual Meeting Room Work?</h4>
-                <p class="Answer">Once registered you will receive a fully branded virtual meeting room in which to conduct all your pre-arranged one-to-one meetings. You will be assigned a dedicated personal meeting planner to bespoke your meeting schedule.</p>
-            </div>
-            <div class="FAQ">
-                <h4 class="Question">How Do Retailers Hear of the Event?</h4>
-                <p class="Answer">The team will be inviting retailers / leisure operators to attend the event, it will also be advertised each month in RLI, the world’s only global retail and leisure magazine, promoted via our weekly newsletter and e-shots as well as across all our social media platforms: Facebook, Twitter, Instagram, Linkedin.</p>
-            </div>
-            <div class="FAQ">
-                <h4 class="Question">What Do I Need To Prepare?</h4>
-                <p class="Answer">In order for you to have a successful event it is essential that you plan your schedule in advance and research the Retailers / Leisure Operators that you wish to meet prior to the event.<br><br>If you do not pre-arrange meetings you will not reap the benefits as Retailers / Leisure Operators tend to organise their itineraries and have little or no time for additional meetings.</p>
-            </div>
-            <div class="FAQ">
-                <h4 class="Question">How Do I Arrange Meetings?</h4>
-                <p class="Answer">Please contact Jess Milne, Event Coordinator. +44 (0) 1706 212200 | Jess.Milne@rliconnect.com</p>
-            </div>
-        </div>
-        <div class="bookContainer">
-            <h3>Secure Your Place</h3>
-            <div class="bookCard">
-                <a class="bookLink" target="_blank" href="PDF/BookingForm_Developer.pdf">Booking Form</a>
-            </div>
-            <div class="bookCard">
-                <div class="bookText">
-                    <h4>UK Developer</h4>
-                    <h6>£5994</h6>
-                    <p>£4995 + VAT</p>
+            <div class="textContainer">
+                <div class="FAQ">
+                    <h4 class="Question">Why Should I Take Part?</h4>
+                    <p class="Answer">As we all come to terms with new shared realities, staying connected has never been more prevalent. Save time and money with all your pre-arranged meetings under one roof. As it’s a hybrid event, those who are longing to meet in person have the power of face-to-face whilst those still unable to travel can take advantage of the virtual element, enabling you to find those new-to-market retailers and unique and innovative leisure and entertainment concepts for your malls, mixed-use destinations, high-streets and outlet centres. Make new connections, form strategic partnerships and sign those deals, all from one physical or digital location…one event two experiences.</p>
                 </div>
-                <a class="bookLink" href="http://fastcart.co.uk/cart/index.php?%20id=9428&item=RLI%20Branded%20Meeting%20Room%20WITH%20VAT&price=5994">Buy Now</a>
-            </div>
-            <div class="bookCard">
-                <div class="bookText">
-                    <h4>International Developer</h4>
-                    <h6>£4995</h6>
+                <div class="FAQ">
+                    <h4 class="Question">How Can I Take Part?</h4>
+                    <p class="Answer">Attend the event by completing the Developer Registration Form. Once registered you will be assigned a dedicated meeting planner to organise your schedule for the event.  On arrival at the physical event you will be taken to your own private meeting room where you will meet the people you have pre-arranged meetings with. In between meetings you will have the opportunity to network with other delegates in a central location. If you are utilising the virtual element we will ensure you are connected with your pre-arranged one to one meetings at the allotted times.<br><br>The physical event allows you to either have unlimited meetings over the two days in a fully branded private meeting room, which will allow you to share presentations and videos and includes your own personal dedicated meeting planner for £5,000. Alternatively if you do not have the full two days to allocate to meetings, you may arrange individual meetings at £250 per meeting, which will be arranged by your dedicated meeting planner, these will take place in a central location.</p>
                 </div>
-                <a class="bookLink" href="http://fastcart.co.uk/cart/index.php?%20id=9428&item=RLI%20Branded%20Meeting%20Room%20NO%20VAT&price=4995">Buy Now</a>
+                <div class="FAQ">
+                    <h4 class="Question">How Does My Virtual Meeting Room Work?</h4>
+                    <p class="Answer">Once registered you will receive a fully branded virtual meeting room in which to conduct all your pre-arranged one-to-one meetings. You will be assigned a dedicated personal meeting planner to bespoke your meeting schedule.</p>
+                </div>
+                <div class="FAQ">
+                    <h4 class="Question">How Do Retailers Hear of the Event?</h4>
+                    <p class="Answer">The team will be inviting retailers / leisure operators to attend the event, it will also be advertised each month in RLI, the world’s only global retail and leisure magazine, promoted via our weekly newsletter and e-shots as well as across all our social media platforms: Facebook, Twitter, Instagram, Linkedin.</p>
+                </div>
+                <div class="FAQ">
+                    <h4 class="Question">What Do I Need To Prepare?</h4>
+                    <p class="Answer">In order for you to have a successful event it is essential that you plan your schedule in advance and research the Retailers / Leisure Operators that you wish to meet prior to the event.<br><br>If you do not pre-arrange meetings you will not reap the benefits as Retailers / Leisure Operators tend to organise their itineraries and have little or no time for additional meetings.</p>
+                </div>
+                <div class="FAQ">
+                    <h4 class="Question">How Do I Arrange Meetings?</h4>
+                    <p class="Answer">Please contact Jess Milne, Event Coordinator.<br>+44 (0) 1706 212200</p>
+                    <a href="mailto:jess.milne@rliconnect.com">jess.milne@rliconnnect.com</a>
+                </div>
+            </div>
+            <div class="bookContainer">
+                <h3>Secure Your Place</h3>
+                <div class="bookCard">
+                    <a class="bookLink" target="_blank" rel="noreferrer" href="PDF/BookingForm_Developer.pdf">Booking Form</a>
+                </div>
+                <div class="bookCard">
+                    <div class="bookText">
+                        <h4>UK Developer</h4>
+                        <h6>£5994</h6>
+                        <p>£4995 + VAT</p>
+                    </div>
+                    <a class="bookLink" href="http://fastcart.co.uk/cart/index.php?%20id=9428&item=RLI%20Branded%20Meeting%20Room%20WITH%20VAT&price=5994">Buy Now</a>
+                </div>
+                <div class="bookCard">
+                    <div class="bookText">
+                        <h4>International Developer</h4>
+                        <h6>£4995</h6>
+                    </div>
+                    <a class="bookLink" href="http://fastcart.co.uk/cart/index.php?%20id=9428&item=RLI%20Branded%20Meeting%20Room%20NO%20VAT&price=4995">Buy Now</a>
+                </div>
             </div>
         </div>
     </div>
     <footer>
         <div class="footer-icons">
-            <a target="_blank" href="https://www.facebook.com/rliglobal"><i class="fab fa-facebook-f"></i></a>
-            <a target="_blank" href="https://twitter.com/rli_global/"><i class="fab fa-twitter"></i></a>
-            <a target="_blank" href="https://uk.linkedin.com/company/retail-&-leisure-international"><i class="fab fa-linkedin-in"></i></a>
-            <a target="_blank" href="https://www.youtube.com/c/rliuk"><i class="fab fa-youtube"></i></a>
-            <a target="_blank" href="https://www.instagram.com/rli_global/"><i class="fab fa-instagram"></i></a>
-            <a target="_blank" href="https://www.pinterest.co.uk/rliglobal/"><i class="fab fa-pinterest-p"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/rliglobal"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/rli_global/"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://uk.linkedin.com/company/retail-&-leisure-international"><i class="fab fa-linkedin-in"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/c/rliuk"><i class="fab fa-youtube"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/rli_global/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://www.pinterest.co.uk/rliglobal/"><i class="fab fa-pinterest-p"></i></a>
         </div>
         <p>Copyright © 2020<br>All Rights Reserved<br>Paramount Publications</p>
     </footer>

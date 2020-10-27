@@ -7,6 +7,9 @@
 
     <meta name="description" content="Delegate Booking page for RLI Connect - The world's only global dealmaking event">
 
+    <!-- CSS Normalize -->
+    <link rel="stylesheet" href="styles/cssNormalize.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
 
@@ -14,10 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest"> -->
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e3c1247e73.js" crossorigin="anonymous"></script>
@@ -27,17 +30,19 @@
         <a href="index.html#areaOne">
             <img class="logo" src="img/Logo_Coloured.svg" alt="">
         </a>
-        <div class="partner">
-            <p>GOLD SPONSOR</p>
-            <a href="https://www.ece.org/" target="_blank">
-                <img src="img/ece.png" alt="">
-            </a>
-        </div>
-        <div class="partner">
-            <p>GLOBAL PARTNER</p>
-            <a href="https://www.mapic.com/en-gb.html target="_blank">
-                <img src="img/mapic.png" alt="">
-            </a>
+        <div class="partners">
+            <div class="partner">
+                <p>GOLD SPONSOR</p>
+                <a href="https://www.ece.org/" target="_blank" rel="noreferrer">
+                    <img src="img/ece.webp" alt="ECE Logo">
+                </a>
+            </div>
+            <div class="partner">
+                <p>GLOBAL PARTNER</p>
+                <a href="https://www.mapic.com/en-gb.html target="_blank" rel="noreferrer">
+                    <img src="img/mapic.webp" alt="Mapic Logo">
+                </a>
+            </div>
         </div>
         <div class="menu-btn" id="burger">
             <div class="burger"></div>
@@ -45,65 +50,68 @@
         <ul class="nav-list hidden">
             <li><a href="index.html#areaTwo">Get Involved</a></li>
             <li><a href="index.html#areaThree">Book</a></li>
-            <li><a target="_blank" href="PDF/Brochure.pdf">Brochure</a></li>
+            <li><a target="_blank" rel="noreferrer" href="PDF/Brochure.pdf">Brochure</a></li>
             <li><a href="index.html#areaFour">Contact</a></li>
-            <li><a target="_blank" href="https://www.rli.uk.com/">Magazine</a></li>
-            <li><a target="_blank" href="https://rli.uk.com/awards/">Awards</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://www.rli.uk.com/">Magazine</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://rli.uk.com/awards/">Awards</a></li>
         </ul>
     </nav>
     <div class="container-moreInfo">
-        <div class="introContainer">
-            <h1>Delegate</h1>
-            <p>The Retail & Leisure sectors have experienced huge challenges across the world as a result of the Covid-19 pandemic and will continue to face unprecedented market disruptions for the foreseeable future. In order to survive and thrive in a post Covid world, the retail industry needs to evolve and seek opportunities that have arisen. This year's event aims to connect you with the right partners to facilitate transformation and expansion strategies in a ‘New Era’.</p>
-        </div>
-        <div class="textContainer">
-            <div class="FAQ">
-                <h4 class="Question">Why Should I Take Part?</h4>
-                <p class="Answer">As we all come to terms with new shared realities, staying connected has never been more prevalent. As it’s a hybrid event, those who are longing to meet in person have the power of face-to-face networking whilst those still unable to travel can take advantage of the virtual element, enabling you to expand into new markets, make new connections, form strategic partnerships and sign those deals, all from one physical or digital location…one event two experiences.</p>
+        <div class="container-moreInfo-content">
+            <div class="introContainer">
+                <h1>Delegate</h1>
+                <p>The Retail & Leisure sectors have experienced huge challenges across the world as a result of the Covid-19 pandemic and will continue to face unprecedented market disruptions for the foreseeable future. In order to survive and thrive in a post Covid world, the retail industry needs to evolve and seek opportunities that have arisen. This year's event aims to connect you with the right partners to facilitate transformation and expansion strategies in a ‘New Era’.</p>
             </div>
-            <div class="FAQ">
-                <h4 class="Question">How Can I Take Part?</h4>
-                <p class="Answer">Delegates can attend the event by completing our delegate registration form. Once at the physical event you can network with other participants. We will be hosting 4 ‘Meet the Delegate’ speed dating sessions during the event. The team will also be available throughout the event to assist you with any follow up meetings.<br><br>The Virtual platform will allow delegates to have pre-arranged one to one meetings over the two days in the absence of being able to participate in the face to face networking and speed dating sessions, these will be arranged by your dedicated meeting planner.  </p>
-            </div>
-            <div class="FAQ">
-                <h4 class="Question">What Do I Need To Prepare?</h4>
-                <p class="Answer">As a delegate looking to attend the event you should already have an idea of the types of companies that you wish to meet, that are relevant to the expansion of your business. Have plenty of business cards at the ready to hand out during the ‘Meet the Delegate’ Speed dating session and marketing material for those follow up meetings.<br><br>For the Virtual Platform we will liaise with you to create a schedule and make sure you do your homework on the companies you wish to meet.</p>
-            </div>
-            <div class="FAQ">
-                <h4 class="Question">How Do I Arrange Meetings?</h4>
-                <p class="Answer">Please contact Jess Milne, Event Coordinator. +44 (0) 1706 212200 | Jess.Milne@rliconnect.com</p>
-            </div>
-        </div>
-        <div class="bookContainer">
-            <h3>Secure Your Place</h3>
-            <div class="bookCard">
-                <a class="bookLink" target="_blank" href="PDF/BookingForm_Delegate.pdf">Booking Form</a>
-            </div>
-            <div class="bookCard">
-                <div class="bookText">
-                    <h4>UK Delegate</h4>
-                    <h6>£1194</h6>
-                    <p>£995 + VAT</p>
+            <div class="textContainer">
+                <div class="FAQ">
+                    <h4 class="Question">Why Should I Take Part?</h4>
+                    <p class="Answer">As we all come to terms with new shared realities, staying connected has never been more prevalent. As it’s a hybrid event, those who are longing to meet in person have the power of face-to-face networking whilst those still unable to travel can take advantage of the virtual element, enabling you to expand into new markets, make new connections, form strategic partnerships and sign those deals, all from one physical or digital location…one event two experiences.</p>
                 </div>
-                <a class="bookLink" href="http://fastcart.co.uk/cart/index.php?%20id=9428&item=Private%20Virtual%20Meeting%20Room%20WITH%20VAT&price=1194">Buy Now</a>
-            </div>
-            <div class="bookCard">
-                <div class="bookText">
-                    <h4>International Delegate</h4>
-                    <h6>£995</h6>
+                <div class="FAQ">
+                    <h4 class="Question">How Can I Take Part?</h4>
+                    <p class="Answer">Delegates can attend the event by completing our delegate registration form. Once at the physical event you can network with other participants. We will be hosting 4 ‘Meet the Delegate’ speed dating sessions during the event. The team will also be available throughout the event to assist you with any follow up meetings.<br><br>The Virtual platform will allow delegates to have pre-arranged one to one meetings over the two days in the absence of being able to participate in the face to face networking and speed dating sessions, these will be arranged by your dedicated meeting planner.  </p>
                 </div>
-                <a class="bookLink" href="http://fastcart.co.uk/cart/index.php?%20id=9428&item=Private%20Virtual%20Meeting%20Room%20NO%20VAT&price=995">Buy Now</a>
+                <div class="FAQ">
+                    <h4 class="Question">What Do I Need To Prepare?</h4>
+                    <p class="Answer">As a delegate looking to attend the event you should already have an idea of the types of companies that you wish to meet, that are relevant to the expansion of your business. Have plenty of business cards at the ready to hand out during the ‘Meet the Delegate’ Speed dating session and marketing material for those follow up meetings.<br><br>For the Virtual Platform we will liaise with you to create a schedule and make sure you do your homework on the companies you wish to meet.</p>
+                </div>
+                <div class="FAQ">
+                    <h4 class="Question">How Do I Arrange Meetings?</h4>
+                    <p class="Answer">Please contact Jess Milne, Event Coordinator.<br>+44 (0) 1706 212200</p>
+                    <a href="mailto:jess.milne@rliconnect.com">jess.milne@rliconnnect.com</a>
+                </div>
+            </div>
+            <div class="bookContainer">
+                <h3>Secure Your Place</h3>
+                <div class="bookCard">
+                    <a class="bookLink" target="_blank" rel="noreferrer" href="PDF/BookingForm_Delegate.pdf">Booking Form</a>
+                </div>
+                <div class="bookCard">
+                    <div class="bookText">
+                        <h4>UK Delegate</h4>
+                        <h6>£1194</h6>
+                        <p>£995 + VAT</p>
+                    </div>
+                    <a class="bookLink" href="http://fastcart.co.uk/cart/index.php?%20id=9428&item=Private%20Virtual%20Meeting%20Room%20WITH%20VAT&price=1194">Buy Now</a>
+                </div>
+                <div class="bookCard">
+                    <div class="bookText">
+                        <h4>International Delegate</h4>
+                        <h6>£995</h6>
+                    </div>
+                    <a class="bookLink" href="http://fastcart.co.uk/cart/index.php?%20id=9428&item=Private%20Virtual%20Meeting%20Room%20NO%20VAT&price=995">Buy Now</a>
+                </div>
             </div>
         </div>
     </div>
     <footer>
         <div class="footer-icons">
-            <a target="_blank" href="https://www.facebook.com/rliglobal"><i class="fab fa-facebook-f"></i></a>
-            <a target="_blank" href="https://twitter.com/rli_global/"><i class="fab fa-twitter"></i></a>
-            <a target="_blank" href="https://uk.linkedin.com/company/retail-&-leisure-international"><i class="fab fa-linkedin-in"></i></a>
-            <a target="_blank" href="https://www.youtube.com/c/rliuk"><i class="fab fa-youtube"></i></a>
-            <a target="_blank" href="https://www.instagram.com/rli_global/"><i class="fab fa-instagram"></i></a>
-            <a target="_blank" href="https://www.pinterest.co.uk/rliglobal/"><i class="fab fa-pinterest-p"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/rliglobal"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/rli_global/"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://uk.linkedin.com/company/retail-&-leisure-international"><i class="fab fa-linkedin-in"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/c/rliuk"><i class="fab fa-youtube"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/rli_global/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" rel="noreferrer" href="https://www.pinterest.co.uk/rliglobal/"><i class="fab fa-pinterest-p"></i></a>
         </div>
         <p>Copyright © 2020<br>All Rights Reserved<br>Paramount Publications</p>
     </footer>

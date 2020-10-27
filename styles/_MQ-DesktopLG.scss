@@ -1,0 +1,103 @@
+@media (min-width: 1800px) {
+    body {
+        h1{
+            font-size: calc( 2.4rem + 4 * (100vw - 1800px) / (1800 - 1200) );
+            line-height: calc( 120% + 3.2 * (100vw - 1800px) / (1200 - 1800) );
+        }
+    
+        h2{
+            font-size: calc( 2rem + 2 * (100vw - 1800px) / (1800 - 1200) );
+            line-height: calc( 120% + 2.8 * (100vw - 1800px) / (1200 - 1800) );
+        }
+    
+        h3 {
+            font-size: calc( 2rem + 6 * (100vw - 1800px) / (1800 - 1200) );
+            line-height: calc( 120% + 2.4 * (100vw - 1800px) / (1200 - 1800) );
+        }
+    
+        h4{
+              font-size: calc( 1.4rem + 1 * (100vw - 1800px) / (1800 - 1200) );
+              line-height: calc( 120% + 2 * (100vw - 1800px) / (1200 - 1800) );
+        }
+    
+        h5{
+            font-size: calc( 1.3rem + 1 * (100vw - 1800px) / (1800 - 1200) );
+            line-height: calc( 120% + 1.6 * (100vw - 1800px) / (1200 - 1800) );
+        }  
+    
+        h6{
+            font-size: calc( 1.2rem + 1 * (100vw - 1800px) / (1800 - 1200) );
+            line-height: calc( 120% + 1.2 * (100vw - 1800px) / (1200 - 1800) );
+        }
+    
+        p {
+            font-size: calc( 1.2rem + 1 * (100vw - 1800px) / (1800 - 1200) );
+            line-height: calc( 120% + 1.2 * (100vw - 1800px) / (1200 - 1800) );
+        }
+    
+        span {
+            font-size: calc( 2.6rem + 6 * (100vw - 1800px) / (1800 - 1200) );
+            line-height: calc( 120% + 2.4 * (100vw - 1800px) / (1200 - 1800) );
+        }
+    
+        a {
+            font-size: calc( 1.4rem + 4 * (100vw - 1800px) / (1800 - 1200) );
+            line-height: calc( 120% + 1.6 * (100vw - 1800px) / (1200 - 1800) );
+        }
+
+        nav{
+            .nav-list {
+                a {
+                    font-size: calc( 1.4rem + 4 * (100vw - 1800px) / (1800 - 1200) );
+                }
+            }
+    
+            .partners {
+                .partner {
+                    p {
+                        font-size: calc( 1rem + 2 * (100vw - 1800px) / (1800 - 1200) );
+                    }
+                    a {
+                        img {
+                            height: calc( 3rem + 6 * (100vw - 1800px) / (1800 - 1200) );
+                        }
+                    }
+                }
+            }
+    
+            a {
+                .logo {
+                    height: calc( 5.4rem + 10 * (100vw - 1800px) / (1800 - 1200) );
+                }
+            }
+        }
+        
+        .container-main {
+            .areaTwo .areaContainer {
+                padding-top: 12em;
+            }
+
+            .areaThree .areaContainer {
+                .areaThreeCardsContainer {
+                    column-gap: 6%;
+                }
+            }
+        }
+
+        .areaFour .areaContainer .contact-cards-container .contact-card {
+
+            a {
+                font-size: calc( 1rem + 2 * (100vw - 1200px) / (1800 - 1200) );
+                line-height: calc( 120% + 1.6 * (100vw - 1800px) / (1200 - 1800) );
+            }
+        }
+
+        footer {
+            .footer-icons {
+                a {
+                    font-size: calc( 2.6rem + 2 * (100vw - 1800px) / (1800 - 1200) );
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 nav {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, 1fr);
     background-color: rgba(240, 240, 240, 0.9);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -13,9 +13,7 @@ nav {
 
     .nav-list {
         display: none;
-        align-items: center;
         list-style: none;
-        grid-column: 1 /span 4;
         transition: all 0.4s;
 
         li {
@@ -32,11 +30,6 @@ nav {
             }
         }
 
-        // .bookList li a {
-        //     font-size: calc( 0.8rem + 16 * (100vw - 280px) / (960 - 280) );
-        //     line-height: calc( 120% + 3.2 * (100vw - 600px) / (280 - 600) );
-        // }
-
         .separator {
             height: 2em;
             width: 1px;
@@ -49,25 +42,28 @@ nav {
     }
 
     a {
-        margin: auto;
+        margin: auto auto auto 0;
         .logo {
+            align-items: start;
             grid-area: logo;
-            height: 40px;
         }
     }
 
-    .partner {
-        margin: auto;
-        text-align: center;
+    .partners {
+        display: flex;
 
-        p {
-            font-size: calc( 0.3rem + 16 * (100vw - 280px) / (600 - 280) );
-            margin-bottom: 0.3em;
-        }
-        
-        img {
-            height: 20px;
-            width: auto;
+        .partner {
+            margin: auto;
+            text-align: center;
+    
+            p {
+                margin-bottom: 0.3em;
+            }
+            
+            img {
+                height: 20px;
+                width: auto;
+            }
         }
     }
 
@@ -80,6 +76,8 @@ nav {
     height: auto;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+    margin-left: auto;
+    padding: 1em;
     }
 
     .burger {

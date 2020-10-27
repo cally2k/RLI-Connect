@@ -1,64 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     scroll-behavior: smooth;
     max-width: 100%;
     overflow-x: hidden;
-    // overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
     font-family: "Inter", sans-serif;
 
-    background-image: url(../img/london_pixels.png);
+    background-image: url(/img/london_pixels.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 
     color: #202020;
-}
 
-@media (min-width: 280px) and (max-width: 599px) {
-    body {
-        h2{
-            font-size: calc( 1.6rem + 16 * (100vw - 280px) / (600 - 280) );
-            line-height: calc( 120% + 1.6 * (100vw - 600px) / (280 - 600) );
-        }
-
-        h3 {
-            font-size: calc( 1.5rem + 16 * (100vw - 280px) / (600 - 280) );
-            line-height: calc( 120% + 3.2 * (100vw - 600px) / (280 - 600) );
-        }
-
-        h4{
-              font-size: calc( 0.8rem + 16 * (100vw - 280px) / (600 - 280) );
-              line-height: calc( 120% + 1.6 * (100vw - 600px) / (280 - 600) );
-        }
-
-        h6{
-            font-size: calc( 0.6rem + 16 * (100vw - 280px) / (600 - 280) );
-            line-height: calc( 120% + 1.6 * (100vw - 600px) / (280 - 600) );
-        }
-
-        p {
-              font-size: calc( 0.5rem + 16 * (100vw - 280px) / (600 - 280) );
-              line-height: calc( 120% + 3.2 * (100vw - 600px) / (280 - 600) );
-        }
-
-        span {
-              font-size: calc( 1.2rem + 16 * (100vw - 280px) / (600 - 280) );
-              line-height: calc( 120% + 3.2 * (100vw - 600px) / (280 - 600) );
-        }
-
-        a {
-            font-size: calc( 0.8rem + 16 * (100vw - 280px) / (960 - 280) );
-            line-height: calc( 120% + 3.2 * (100vw - 600px) / (280 - 600) );
-        }
-    }
 }
 
 .container-active {
@@ -74,3 +39,9 @@ body {
 @import "_footer.scss";
 
 @import "_moreInfo.scss";
+
+@import "_MQ-Mobile";
+@import "_MQ-Tablet";
+@import "_MQ-Laptop";
+@import "_MQ-Desktop";
+@import "_MQ-DesktopLG";
