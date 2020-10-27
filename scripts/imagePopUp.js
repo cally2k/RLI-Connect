@@ -28,7 +28,7 @@ document.getElementById("ImgArea").addEventListener("mousemove", throttle(() => 
     const img = document.createElement("img");
 
     img.setAttribute("id", `PopUpImg`);
-    img.setAttribute("src", `../img/PopUp/${i}.webp`);
+    img.setAttribute("src", `./img/PopUp/${i}.webp`);
     img.setAttribute("alt","RLI Connect");
     img.onload = function() {
         img.style.height = `${img.naturalHeight*scale}px`;
